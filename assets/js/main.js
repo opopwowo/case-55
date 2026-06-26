@@ -141,4 +141,27 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Current year ---------- */
   var yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- 產品圖燈箱（點擊放大） ---------- */
+  var zoomImgs = document.querySelectorAll('.product-img, .zoomable');
+  if (zoomImgs.length) {
+    var lb = document.createElement('div');
+    lb.className = 'lightbox-overlay';
+    lb.innerHTML = '<button class="lightbox-close" aria-label="關閉">×</button><img alt="">';
+    document.body.appendChild(lb);
+    var lbImg = lb.querySelector('img');
+    function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+    zoomImgs.forEach(function (im) {
+      im.addEventListener('click', function () {
+        lbImg.src = im.currentSrc || im.src;
+        lbImg.alt = im.alt || '';
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.classList.contains('lightbox-close')) closeLb();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+  }
 });
