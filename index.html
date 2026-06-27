@@ -731,11 +731,25 @@
   <div class="max-w-3xl mx-auto px-6 lg:px-10 relative text-center reveal">
     <h2 class="font-serif-tc text-3xl md:text-4xl font-bold mb-6">免費代工諮詢</h2>
     <p class="text-sm md:text-base text-white/80 leading-relaxed mb-10">想了解晶凍／保健食品 OEM・ODM 代工、配方開發或品牌合作，<br class="hidden md:block">歡迎直接與業務經理游勝愷聯繫。</p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
       <a href="tel:0963339098" class="btn-outline-white px-8 py-4 rounded-full text-sm md:text-base font-bold">📞 立即來電</a>
       <a href="https://line.me/ti/p/petuUoEm_w" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-4 rounded-full text-sm md:text-base font-bold bg-[#06C755] text-white hover:opacity-90 transition-opacity">加入 LINE</a>
       <a href="mailto:lawrenceyu911@gmail.com" class="inline-flex items-center px-8 py-4 rounded-full text-sm md:text-base font-bold bg-accent text-primary hover:opacity-90 transition-opacity">✉ Email 聯絡</a>
     </div>
+    <!-- 聯絡表單（送出至 Formspree；請將 action 換成你的 Formspree endpoint） -->
+    <form action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST" class="max-w-xl mx-auto bg-white rounded-2xl p-6 md:p-8 text-left shadow-xl">
+      <p class="font-serif-tc text-lg font-bold text-primary mb-1 text-center">線上諮詢表單</p>
+      <p class="text-xs text-ink/50 mb-5 text-center">填寫後送出，我們將盡快與您聯繫</p>
+      <div class="grid sm:grid-cols-2 gap-4 mb-4">
+        <div><label class="block text-xs font-bold text-ink/70 mb-1">姓名 *</label><input type="text" name="姓名" required class="w-full rounded-lg border border-accent/30 px-3 py-2.5 text-sm text-ink focus:outline-none focus:border-primary"></div>
+        <div><label class="block text-xs font-bold text-ink/70 mb-1">電話 *</label><input type="tel" name="電話" required class="w-full rounded-lg border border-accent/30 px-3 py-2.5 text-sm text-ink focus:outline-none focus:border-primary"></div>
+        <div><label class="block text-xs font-bold text-ink/70 mb-1">Email *</label><input type="email" name="Email" required class="w-full rounded-lg border border-accent/30 px-3 py-2.5 text-sm text-ink focus:outline-none focus:border-primary"></div>
+        <div><label class="block text-xs font-bold text-ink/70 mb-1">需求類型</label><select name="需求類型" class="w-full rounded-lg border border-accent/30 px-3 py-2.5 text-sm text-ink bg-white focus:outline-none focus:border-primary"><option>晶凍／保健食品 OEM・ODM 代工</option><option>配方設計與打樣</option><option>品牌合作</option><option>產品購買／團購</option><option>FORA 醫療器材</option><option>其他</option></select></div>
+      </div>
+      <div class="mb-5"><label class="block text-xs font-bold text-ink/70 mb-1">需求說明</label><textarea name="需求說明" rows="3" class="w-full rounded-lg border border-accent/30 px-3 py-2.5 text-sm text-ink focus:outline-none focus:border-primary" placeholder="請簡述您的需求、產品構想或預算範圍"></textarea></div>
+      <button type="submit" class="btn-primary w-full py-3.5 rounded-full text-sm md:text-base font-bold">送出諮詢</button>
+      <p class="text-[11px] text-ink/40 mt-3 text-center">送出即表示同意我們以您提供的聯絡方式回覆，我們不會將資料用於其他用途。</p>
+    </form>
   </div>
 </section>
 
@@ -791,13 +805,14 @@
           <li><a href="#contact" class="hover:text-white transition-colors">立即諮詢</a></li>
           <li><a href="about.html" class="hover:text-white transition-colors">關於我們</a></li>
           <li><a href="jelly.html" class="hover:text-white transition-colors">晶凍健康食品</a></li>
+          <li><a href="ingredients/index.html" class="hover:text-white transition-colors">成分知識中心</a></li>
           <li><a href="fora.html" class="hover:text-white transition-colors">FORA醫療器材</a></li>
-          <li><a href="beauty.html" class="hover:text-white transition-colors">美妝保養</a></li>
           <li><a href="guide.html" class="hover:text-white transition-colors">選購指南</a></li>
           <li><a href="blog.html" class="hover:text-white transition-colors">知識中心</a></li>
           <li><a href="faq.html" class="hover:text-white transition-colors">常見問題</a></li>
+          <li><a href="#popular-questions" class="hover:text-white transition-colors">熱門健康問題</a></li>
           <li><a href="#features" class="hover:text-white transition-colors">產品特色</a></li>
-          <li><a href="#brand" class="hover:text-white transition-colors">品牌理念</a></li>
+          <li><a href="#founder" class="hover:text-white transition-colors">品牌理念</a></li>
           <li><a href="#map" class="hover:text-white transition-colors">地圖位置</a></li>
         </ul>
       </div>
