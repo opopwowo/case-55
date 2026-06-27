@@ -52,6 +52,15 @@
   </url>
   <url><loc>https://www.kailebio.com/ingredients/gaba.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.kailebio.com/ingredients/l-glutamine.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/calcium.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/magnesium.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/vitamin-d3.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/vitamin-k2.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/pureway-c.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/zinc.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/egcg.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/bromelain.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kailebio.com/ingredients/hericium.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url>
     <loc>https://www.kailebio.com/blog.html</loc>
     <changefreq>weekly</changefreq>
