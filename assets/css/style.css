@@ -373,3 +373,8 @@ body{
   background:var(--color-accent);
   color:#fff;
 }
+
+/* 補齊編譯版 tailwind.css 缺少的工具類（ingredients/index.html 知識圖譜使用） */
+.whitespace-pre{white-space:pre}
+.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+.leading-7{line-height:1.75rem}
